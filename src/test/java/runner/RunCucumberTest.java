@@ -8,12 +8,13 @@ import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.safari.SafariOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {"json:target/reports/", "html:target/reports/"},
         features = "src/test/resources/features",
-        tags = "@login",
+        tags = "@cadastro",
         glue = {"steps"}
 )
 
@@ -24,6 +25,7 @@ public class RunCucumberTest {
     @BeforeClass
     public static void start() {
         driver = new SafariDriver();
+
     }
 
     @AfterClass
