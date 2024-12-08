@@ -1,6 +1,6 @@
 # Automação de Testes com Selenium e Cucumber
 
-Este repositório contém a automação de testes para o site **Automation Practice** usando **Selenium** e **Cucumber**. A automação realiza testes de login, incluindo casos de sucesso e falha.
+Este repositório contém a automação de testes para o site **Automation Practice** usando **Selenium** e **Cucumber**. A automação realiza testes de login, cadastro, incluindo casos de sucesso e falha.
 
 # Tecnologias Utilizadas
 
@@ -8,20 +8,6 @@ Este repositório contém a automação de testes para o site **Automation Pract
 - **Selenium WebDriver**: Biblioteca para automação de testes em navegadores.
 - **Cucumber**: Framework para testes automatizados baseados em BDD (Behavior Driven Development).
 - **JUnit**: Framework para execução dos testes.
-
-# Estrutura do Projeto
-
-# 1. runner/RunCucumberTest.java
-Este arquivo contém a configuração principal para rodar os testes com o Cucumber. Ele utiliza o **SafariDriver** como navegador.
-
-# 2. pages/LoginPage.java
-A classe `LoginPage` contém os métodos de interação com os elementos da página de login, como preencher os campos de e-mail e senha, clicar no botão de login e verificar mensagens de sucesso ou falha.
-
-# 3. steps/LoginSteps.java
-Contém as implementações das etapas (steps) do Cucumber, mapeando as ações descritas no arquivo de features.
-
-# 4. features/login.feature
-Este arquivo contém os cenários de teste no formato **Gherkin**, descrevendo os testes de login, com cenários de sucesso e falha.
 
 # Requisitos
 
@@ -50,6 +36,6 @@ Os resultados dos testes serão gerados em target/reports/, com relatórios em f
 
 # Como Funciona
 
-Cucumber executa os cenários descritos no arquivo .feature (em Gherkin), com os passos definidos em LoginSteps.java.
+Cucumber executa os cenários descritos no arquivo .feature (em Gherkin), com os passos definidos nos arquivos da pasta steps.
 Selenium WebDriver interage com o navegador (Safari, neste caso) e executa as ações descritas (preencher campos, clicar em botões, etc).
 JUnit gerencia a execução dos testes e gera os relatórios de saída.
