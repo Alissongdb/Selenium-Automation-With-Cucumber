@@ -35,8 +35,10 @@ Este arquivo contém os cenários de teste no formato **Gherkin**, descrevendo o
 
 ### 1. Clone o repositório
 
+```bash
 git clone https://github.com/seu-usuario/automacao-tests.git
 cd automacao-tests
+
 
 ### 2. Baixe as dependências
 Execute o comando abaixo para baixar as dependências com o Maven:
@@ -48,42 +50,6 @@ Para rodar os testes, execute o comando abaixo:
 
 mvn test
 Os resultados dos testes serão gerados em target/reports/, com relatórios em formato JSON e HTML.
-
-## Funcionalidades e Cenários de Teste
-
-Funcionalidade: Realizar login no site
-Cenário 1: Realizar login com sucesso e senha válida
-
-Dado que estou no site Automation Practice
-E clico no botão de login da página principal
-Quando preencho o campo e-mail com alissondalbosco@hotmail.com
-E preencho o campo senha com 123456
-E clico no botão de login
-Então deve ser aberto uma janela popup com a mensagem "Login realizado"
-Cenário 2: Realizar login com falha e senha inválida
-
-Dado que estou no site Automation Practice
-E clico no botão de login da página principal
-Quando preencho o campo e-mail com alissondalbosco@hotmail.com
-E preencho o campo senha com 123
-E clico no botão de login
-Então deve ser apresentada a mensagem "Senha inválida"
-Cenário 3: Realizar login com sucesso e login válido
-
-Dado que estou no site Automation Practice
-E clico no botão de login da página principal
-Quando preencho o campo e-mail com alissondalbosco@hotmail.com
-E preencho o campo senha com 123456
-E clico no botão de login
-Então deve ser aberto uma janela popup com a mensagem "Login realizado"
-Cenário 4: Realizar login com falha e login inválido
-
-Dado que estou no site Automation Practice
-E clico no botão de login da página principal
-Quando preencho o campo e-mail com emailinvalido
-E preencho o campo senha com 123456
-E clico no botão de login
-Então deve ser apresentada a mensagem "E-mail inválido"
 
 ## Como Funciona
 
